@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/molly-react/static/css/main.093f99c7.chunk.css",
-    "main.js": "/molly-react/static/js/main.9562b4d8.chunk.js",
-    "main.js.map": "/molly-react/static/js/main.9562b4d8.chunk.js.map",
+    "main.js": "/molly-react/static/js/main.63f96e6a.chunk.js",
+    "main.js.map": "/molly-react/static/js/main.63f96e6a.chunk.js.map",
     "runtime-main.js": "/molly-react/static/js/runtime-main.22f67cc1.js",
     "runtime-main.js.map": "/molly-react/static/js/runtime-main.22f67cc1.js.map",
-    "static/js/2.68e2371f.chunk.js": "/molly-react/static/js/2.68e2371f.chunk.js",
-    "static/js/2.68e2371f.chunk.js.map": "/molly-react/static/js/2.68e2371f.chunk.js.map",
+    "static/js/2.b8ced796.chunk.js": "/molly-react/static/js/2.b8ced796.chunk.js",
+    "static/js/2.b8ced796.chunk.js.map": "/molly-react/static/js/2.b8ced796.chunk.js.map",
     "index.html": "/molly-react/index.html",
     "static/css/main.093f99c7.chunk.css.map": "/molly-react/static/css/main.093f99c7.chunk.css.map",
-    "static/js/2.68e2371f.chunk.js.LICENSE.txt": "/molly-react/static/js/2.68e2371f.chunk.js.LICENSE.txt",
+    "static/js/2.b8ced796.chunk.js.LICENSE.txt": "/molly-react/static/js/2.b8ced796.chunk.js.LICENSE.txt",
     "static/media/logo.d5da1d21.png": "/molly-react/static/media/logo.d5da1d21.png",
     "static/media/mainVideo.2204d2b0.mp4": "/molly-react/static/media/mainVideo.2204d2b0.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.22f67cc1.js",
-    "static/js/2.68e2371f.chunk.js",
+    "static/js/2.b8ced796.chunk.js",
     "static/css/main.093f99c7.chunk.css",
-    "static/js/main.9562b4d8.chunk.js"
+    "static/js/main.63f96e6a.chunk.js"
   ]
 }
