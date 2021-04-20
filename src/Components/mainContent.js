@@ -23,7 +23,7 @@ function mainContent(props) {
           </div>
         </div>
         <div className="mainContent__right">
-          <img src={require(props.img)} alt={props.title} />
+          <img src={props.img} alt={props.title} />
         </div>
       </div>
     </div>
