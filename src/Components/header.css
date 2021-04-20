@@ -1,0 +1,19 @@
+.header {
+  margin: 0px auto;
+  height: 5vh;
+  text-align: center;
+  z-index: 100;
+}
+
+.header__logo {
+  z-index: 1000;
+  height: 5vh;
+}
+
+.header__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

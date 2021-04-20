@@ -1,0 +1,7 @@
+.footer {
+  height: 5vh;
+  background: white;
+  /* border-top: 1px solid black; */
+  display: flex;
+  justify-content: center;
+}

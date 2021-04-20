@@ -1,0 +1,39 @@
+.mainContent {
+}
+
+.mainContent__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.mainContent__left {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.mainContent__left > h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact__container {
+  display: flex;
+  padding-top: 20px;
+}
+
+.contact__left,
+.contact__right {
+  flex: 1;
+  margin: 20px;
+}
+
+.contact__right {
+  background: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.contact__right p {
+  font-weight: 200;
+}

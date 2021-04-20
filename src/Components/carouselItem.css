@@ -1,0 +1,21 @@
+.carouselItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MuiAvatar-root {
+  width: 400px !important;
+  height: 400px !important;
+  border: 5px solid white;
+  margin-top: 30px;
+}
+
+.carouselItem__heading {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-family: "Great Vibes";
+}
