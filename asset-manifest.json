@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/molly-react/static/css/main.08748194.chunk.css",
-    "main.js": "/molly-react/static/js/main.47cf9b45.chunk.js",
-    "main.js.map": "/molly-react/static/js/main.47cf9b45.chunk.js.map",
+    "main.js": "/molly-react/static/js/main.1b55ad34.chunk.js",
+    "main.js.map": "/molly-react/static/js/main.1b55ad34.chunk.js.map",
     "runtime-main.js": "/molly-react/static/js/runtime-main.22f67cc1.js",
     "runtime-main.js.map": "/molly-react/static/js/runtime-main.22f67cc1.js.map",
     "static/js/2.b8ced796.chunk.js": "/molly-react/static/js/2.b8ced796.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.22f67cc1.js",
     "static/js/2.b8ced796.chunk.js",
     "static/css/main.08748194.chunk.css",
-    "static/js/main.47cf9b45.chunk.js"
+    "static/js/main.1b55ad34.chunk.js"
   ]
 }
