@@ -6,10 +6,11 @@ import "./carouselItem.css";
 import Fade from "@material-ui/core/Fade";
 
 function CarouselItem(props) {
+  const startingURL = "../images/";
   return (
     <div className="carouselItem">
       <div className="carouselItem__item">
-        <Avatar size="500" alt="Remy Sharp" src={props.currImg} />
+        <Avatar size="500" alt="Remy Sharp" src={startingURL + props.currImg} />
         <h2 className="carouselItem__heading">{props.currHeading}</h2>
       </div>
     </div>

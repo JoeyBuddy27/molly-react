@@ -9,7 +9,6 @@ import { UserContext } from "../UserContext";
 import myData from "../data.json";
 
 function Carousel(props) {
-  const startingURL = "../images/";
   // export context
   const currentContext = useContext(UserContext);
 
@@ -48,7 +47,7 @@ function Carousel(props) {
           }
         >
           <CarouselItem
-            currImg={`${startingURL}${data[currentContext.currentItem].img}`}
+            currImg={data[currentContext.currentItem].img}
             currHeading={data[currentContext.currentItem].title}
           />
         </div>
