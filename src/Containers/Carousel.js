@@ -25,6 +25,8 @@ function Carousel(props) {
 
   console.log(data[0].title);
 
+  const startingURL = "/images/";
+
   useEffect(() => {
     setTimeout(() => {
       setChecked((prev) => !prev);
@@ -40,7 +42,7 @@ function Carousel(props) {
     <div className="carousel">
       <h1 className="carousel__title">Services</h1>
       <h3 className="carousel__subtitle">[Tap for info]</h3>
-      <p>More changes</p>
+
       <Fade in={checked} timeout={1000}>
         <div
           onClick={() =>
