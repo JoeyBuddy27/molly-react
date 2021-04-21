@@ -9,7 +9,7 @@ function CarouselItem(props) {
   return (
     <div className="carouselItem">
       <div className="carouselItem__item">
-        <Avatar size="500" alt="Remy Sharp" src={props.currImg} />
+        <Avatar alt="Remy Sharp" src={props.currImg} />
         <h2 className="carouselItem__heading">{props.currHeading}</h2>
       </div>
     </div>

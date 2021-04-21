@@ -50,40 +50,38 @@ function Carousel(props) {
 
   return (
     <div className="carousel">
-      <div>
-        <h1 className="carousel__title">Services</h1>
-        <h3 className="carousel__subtitle">[Tap for info]</h3>
+      <h1 className="carousel__title">Services</h1>
+      <h3 className="carousel__subtitle">[Tap for info]</h3>
+      <div className="carousel__container">
+        <div>
+          <Fade in={checked} timeout={1000}>
+            <div
+              onClick={() =>
+                currentContext.setCurrentContent(currentContext.currentItem)
+              }
+            >
+              <CarouselItem
+                currImg={data[currentContext.currentItem].img}
+                currHeading={data[currentContext.currentItem].title}
+              />
+            </div>
+          </Fade>
+        </div>
 
-        <Fade in={checked} timeout={1000}>
-          <div
-            onClick={() =>
-              currentContext.setCurrentContent(currentContext.currentItem)
-            }
-          >
-            <CarouselItem
-              currImg={data[currentContext.currentItem].img}
-              currHeading={data[currentContext.currentItem].title}
-            />
-          </div>
-        </Fade>
-      </div>
-
-      <div>
-        <h1 className="carousel__title">Services</h1>
-        <h3 className="carousel__subtitle">[Tap for info]</h3>
-
-        <Fade in={checked} timeout={1000}>
-          <div
-            onClick={() =>
-              currentContext.setCurrentContent(currentContext.currentItem)
-            }
-          >
-            <CarouselItem
-              currImg={data[currentContext.currentItem2].img}
-              currHeading={data[currentContext.currentItem2].title}
-            />
-          </div>
-        </Fade>
+        <div>
+          <Fade in={checked} timeout={1000}>
+            <div
+              onClick={() =>
+                currentContext.setCurrentContent(currentContext.currentItem)
+              }
+            >
+              <CarouselItem
+                currImg={data[currentContext.currentItem2].img}
+                currHeading={data[currentContext.currentItem2].title}
+              />
+            </div>
+          </Fade>
+        </div>
       </div>
     </div>
   );

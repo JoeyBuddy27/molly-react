@@ -5,8 +5,8 @@
 }
 
 .MuiAvatar-root {
-  width: 300px !important;
-  height: 300px !important;
+  width: 35vw !important;
+  height: 35vw !important;
   border: 5px solid white;
   margin-top: 30px;
 }
