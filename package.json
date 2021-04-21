@@ -14,7 +14,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
-  "homepage": "http://sabesansathananthan.github.io/molly-react",
+  "homepage": "http://sabesansathananthan.github.io/molly-react/",
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
