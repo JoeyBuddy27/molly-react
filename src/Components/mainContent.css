@@ -5,7 +5,10 @@
 .mainContent__container {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding-top: 5vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
 }
 
 .mainContent__left {
