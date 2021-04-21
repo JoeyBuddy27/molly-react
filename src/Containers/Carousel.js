@@ -7,10 +7,15 @@ import CarouselItem from "../Components/carouselItem";
 import Fade from "@material-ui/core/Fade";
 import { UserContext } from "../UserContext";
 import myData from "../data.json";
+import ReactAudioPlayer from "react-audio-player";
+import myAudio from "../images/music.mp3";
 
 function Carousel(props) {
   // export context
   const currentContext = useContext(UserContext);
+
+  const secondItem = currentContext.currentItem + 1;
+  console.log(secondItem);
 
   const [checked, setChecked] = useState(false);
 
@@ -35,26 +40,51 @@ function Carousel(props) {
       } else {
         currentContext.setCurrentItem(currentContext.currentItem + 1);
       }
+      if (currentContext.currentItem2 >= data.length - 1) {
+        currentContext.setCurrentItem2(0);
+      } else {
+        currentContext.setCurrentItem2(currentContext.currentItem2 + 1);
+      }
     }, 2000);
   }, [checked]);
 
   return (
     <div className="carousel">
-      <h1 className="carousel__title">Services</h1>
-      <h3 className="carousel__subtitle">[Tap for info]</h3>
+      <div>
+        <h1 className="carousel__title">Services</h1>
+        <h3 className="carousel__subtitle">[Tap for info]</h3>
 
-      <Fade in={checked} timeout={1000}>
-        <div
-          onClick={() =>
-            currentContext.setCurrentContent(currentContext.currentItem)
-          }
-        >
-          <CarouselItem
-            currImg={data[currentContext.currentItem].img}
-            currHeading={data[currentContext.currentItem].title}
-          />
-        </div>
-      </Fade>
+        <Fade in={checked} timeout={1000}>
+          <div
+            onClick={() =>
+              currentContext.setCurrentContent(currentContext.currentItem)
+            }
+          >
+            <CarouselItem
+              currImg={data[currentContext.currentItem].img}
+              currHeading={data[currentContext.currentItem].title}
+            />
+          </div>
+        </Fade>
+      </div>
+
+      <div>
+        <h1 className="carousel__title">Services</h1>
+        <h3 className="carousel__subtitle">[Tap for info]</h3>
+
+        <Fade in={checked} timeout={1000}>
+          <div
+            onClick={() =>
+              currentContext.setCurrentContent(currentContext.currentItem)
+            }
+          >
+            <CarouselItem
+              currImg={data[currentContext.currentItem2].img}
+              currHeading={data[currentContext.currentItem2].title}
+            />
+          </div>
+        </Fade>
+      </div>
     </div>
   );
 }

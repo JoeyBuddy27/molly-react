@@ -1,4 +1,6 @@
 .carousel {
+  display: flex;
+  justify-content: space-around;
   height: 40vh;
   background: #ee9ca7; /* fallback for old browsers */
   background: -webkit-linear-gradient(

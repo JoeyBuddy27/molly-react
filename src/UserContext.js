@@ -6,6 +6,7 @@ export const UserContext = createContext();
 export const UserProvider = ({ children }) => {
   const [currentItem, setCurrentItem] = useState(0);
   const [currentContent, setCurrentContent] = useState(0);
+  const [currentItem2, setCurrentItem2] = useState(1);
 
   return (
     <UserContext.Provider
@@ -14,6 +15,8 @@ export const UserProvider = ({ children }) => {
         setCurrentItem,
         currentContent,
         setCurrentContent,
+        currentItem2,
+        setCurrentItem2,
       }}
     >
       {children}

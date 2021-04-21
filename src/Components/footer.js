@@ -10,7 +10,7 @@ function footer() {
   return (
     <div className="footer">
       <IconButton color="primary" aria-label="facebook">
-        <FacebookIcon color="blue" />
+        <FacebookIcon />
       </IconButton>
       <IconButton aria-label="twitter" color="primary">
         <TwitterIcon />
