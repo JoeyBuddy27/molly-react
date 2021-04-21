@@ -20,7 +20,7 @@ function Content(props) {
         <MainContent
           title={data[currentContext.currentContent].title}
           text={data[currentContext.currentContent].text}
-          img={`${startingURL}${data[currentContext.currentContent].img}`}
+          img={data[currentContext.currentContent].img}
         />
       )}
     </div>
