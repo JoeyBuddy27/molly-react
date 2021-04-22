@@ -11,6 +11,7 @@ import { UserContext } from "../UserContext";
 import myData from "../data.json";
 import ReactAudioPlayer from "react-audio-player";
 import myAudio from "../images/music.mp3";
+import { setEmitFlags } from "typescript";
 
 function Carousel(props) {
   // export context
@@ -39,6 +40,17 @@ function Carousel(props) {
   // const imageArray = [square1, square2];
 
   const startingURL = "/images/";
+
+  let startTime, endTime;
+  let secondsElapsed = 10000;
+  let touchDetected = false;
+
+  const screensaver = () => {
+    if (touchDetected) return;
+    setTimeout(() => {
+      currentContext.setCurrentContent(0);
+    }, secondsElapsed);
+  };
 
   useEffect(() => {
     setTimeout(() => {
@@ -73,6 +85,15 @@ function Carousel(props) {
     }, 2500);
   }, [checked, setChecked]);
 
+  const clickedItem = (item) => {
+    currentContext.setCurrentContent(item);
+    touchDetected = true;
+    setTimeout(() => {
+      touchDetected = false;
+      screensaver();
+    }, 5000);
+  };
+
   return (
     <div className="carousel">
       <h1 className="carousel__title">Services</h1>
@@ -84,7 +105,7 @@ function Carousel(props) {
             style={{ transitionDelay: checked ? "500ms" : "0ms" }}
             timeout={1000}
           >
-            <div onClick={() => currentContext.setCurrentContent(first)}>
+            <div onClick={() => clickedItem(first)}>
               <CarouselItem
                 currImg={data[first].img}
                 currHeading={data[first].title}
@@ -99,7 +120,7 @@ function Carousel(props) {
             timeout={750}
             style={{ transitionDelay: checked ? "250ms" : "0ms" }}
           >
-            <div onClick={() => currentContext.setCurrentContent(second)}>
+            <div onClick={() => clickedItem(second)}>
               <CarouselItem
                 currImg={data[second].img}
                 currHeading={data[second].title}
@@ -110,7 +131,7 @@ function Carousel(props) {
 
         <div>
           <Zoom in={checked} timeout={500}>
-            <div onClick={() => currentContext.setCurrentContent(third)}>
+            <div onClick={() => clickedItem(third)}>
               <CarouselItem
                 currImg={data[third].img}
                 currHeading={data[third].title}
