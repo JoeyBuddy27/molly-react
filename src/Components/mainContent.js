@@ -23,7 +23,11 @@ function mainContent(props) {
           </div>
         </div>
         <div className="mainContent__right">
-          <img src={props.img} alt={props.title} />
+          <img
+            className="mainContent__image"
+            src={props.img}
+            alt={props.title}
+          />
         </div>
       </div>
     </div>

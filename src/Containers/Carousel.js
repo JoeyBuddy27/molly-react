@@ -70,7 +70,7 @@ function Carousel(props) {
       // } else {
       //   currentContext.setCurrentItem2((currentContext.currentItem3 += 1));
       // }
-    }, 4000);
+    }, 2500);
   }, [checked, setChecked]);
 
   return (
@@ -82,7 +82,7 @@ function Carousel(props) {
           <Zoom
             in={checked}
             style={{ transitionDelay: checked ? "500ms" : "0ms" }}
-            timeout={2500}
+            timeout={1000}
           >
             <div onClick={() => currentContext.setCurrentContent(first)}>
               <CarouselItem
@@ -96,7 +96,7 @@ function Carousel(props) {
         <div>
           <Zoom
             in={checked}
-            timeout={2000}
+            timeout={750}
             style={{ transitionDelay: checked ? "250ms" : "0ms" }}
           >
             <div onClick={() => currentContext.setCurrentContent(second)}>
@@ -109,7 +109,7 @@ function Carousel(props) {
         </div>
 
         <div>
-          <Zoom in={checked} timeout={1000}>
+          <Zoom in={checked} timeout={500}>
             <div onClick={() => currentContext.setCurrentContent(third)}>
               <CarouselItem
                 currImg={data[third].img}

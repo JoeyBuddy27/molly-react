@@ -41,3 +41,7 @@
 .contact__right p {
   font-weight: 200;
 }
+
+.mainContent__image {
+  width: 90%;
+}

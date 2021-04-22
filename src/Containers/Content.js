@@ -16,7 +16,7 @@ function Content(props) {
   return (
     <div className="content">
       {currentContext.currentContent == 0 && <MainVideo />}
-      {currentContext.currentContent == 1 && (
+      {currentContext.currentContent !== 0 && (
         <MainContent
           title={data[currentContext.currentContent].title}
           text={data[currentContext.currentContent].text}
