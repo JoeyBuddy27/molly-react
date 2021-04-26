@@ -3,18 +3,19 @@
 }
 
 .mainContent__container {
-  width: 100vw;
+  width: 95vw;
+  margin: 0px auto;
   display: flex;
   justify-content: space-between;
   padding-top: 5vh;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   /* padding-right: 10px; */
   align-items: center;
 }
 
 .mainContent__left {
   flex: 0.5;
-  padding-right: 50px;
+  /* padding-right: 50px; */
 }
 
 .mainContent__right {
