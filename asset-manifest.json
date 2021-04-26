@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/molly-react/static/css/main.127da2a7.chunk.css",
+    "main.css": "/molly-react/static/css/main.84f219b7.chunk.css",
     "main.js": "/molly-react/static/js/main.4ab98c06.chunk.js",
     "main.js.map": "/molly-react/static/js/main.4ab98c06.chunk.js.map",
     "runtime-main.js": "/molly-react/static/js/runtime-main.22f67cc1.js",
@@ -8,7 +8,7 @@
     "static/js/2.52aa1293.chunk.js": "/molly-react/static/js/2.52aa1293.chunk.js",
     "static/js/2.52aa1293.chunk.js.map": "/molly-react/static/js/2.52aa1293.chunk.js.map",
     "index.html": "/molly-react/index.html",
-    "static/css/main.127da2a7.chunk.css.map": "/molly-react/static/css/main.127da2a7.chunk.css.map",
+    "static/css/main.84f219b7.chunk.css.map": "/molly-react/static/css/main.84f219b7.chunk.css.map",
     "static/js/2.52aa1293.chunk.js.LICENSE.txt": "/molly-react/static/js/2.52aa1293.chunk.js.LICENSE.txt",
     "static/media/1.d50bad1d.jpg": "/molly-react/static/media/1.d50bad1d.jpg",
     "static/media/2.150138fd.jpg": "/molly-react/static/media/2.150138fd.jpg",
@@ -20,7 +20,7 @@
   "entrypoints": [
     "static/js/runtime-main.22f67cc1.js",
     "static/js/2.52aa1293.chunk.js",
-    "static/css/main.127da2a7.chunk.css",
+    "static/css/main.84f219b7.chunk.css",
     "static/js/main.4ab98c06.chunk.js"
   ]
 }
