@@ -45,12 +45,12 @@ function Carousel(props) {
   let secondsElapsed = 10000;
   let touchDetected = false;
 
-  const screensaver = () => {
-    if (touchDetected) return;
-    setTimeout(() => {
-      currentContext.setCurrentContent(0);
-    }, secondsElapsed);
-  };
+  // const screensaver = () => {
+  //   if (touchDetected) return;
+  //   setTimeout(() => {
+  //     currentContext.setCurrentContent(0);
+  //   }, secondsElapsed);
+  // };
 
   useEffect(() => {
     setTimeout(() => {
@@ -88,10 +88,10 @@ function Carousel(props) {
   const clickedItem = (item) => {
     currentContext.setCurrentContent(item);
     touchDetected = true;
-    setTimeout(() => {
-      touchDetected = false;
-      screensaver();
-    }, 5000);
+    // setTimeout(() => {
+    //   touchDetected = false;
+    //   screensaver();
+    // }, 5000);
   };
 
   return (

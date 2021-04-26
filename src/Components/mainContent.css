@@ -8,7 +8,7 @@
   justify-content: space-between;
   padding-top: 5vh;
   padding-left: 10px;
-  padding-right: 10px;
+  /* padding-right: 10px; */
   align-items: center;
 }
 
@@ -17,7 +17,7 @@
   padding-right: 50px;
 }
 
-.mainContext__right {
+.mainContent__right {
   flex: 0.5;
 }
 
@@ -49,5 +49,5 @@
 
 .mainContent__image {
   max-width: 100%;
-  width: 100%;
+  width: 90%;
 }
