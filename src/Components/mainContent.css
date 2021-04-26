@@ -3,6 +3,7 @@
 }
 
 .mainContent__container {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   padding-top: 5vh;
@@ -12,8 +13,12 @@
 }
 
 .mainContent__left {
-  flex: 1;
+  flex: 0.5;
   padding-right: 50px;
+}
+
+.mainContext__right {
+  flex: 0.5;
 }
 
 .mainContent__left > h1 {
@@ -43,5 +48,6 @@
 }
 
 .mainContent__image {
-  width: 90%;
+  max-width: 100%;
+  width: 100%;
 }

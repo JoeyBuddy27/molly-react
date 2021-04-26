@@ -11,7 +11,7 @@ function mainContent(props) {
           <p>{props.text}</p>
           <div className="contact__container">
             <div className="contact__left">
-              <img src={QR} alt="" />
+              <img src={QR} alt="" className="mainContent__image" />
             </div>
             <div className="contact__right">
               <h1>GET IN TOUCH</h1>

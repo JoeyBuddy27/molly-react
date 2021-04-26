@@ -82,7 +82,7 @@ function Carousel(props) {
       // } else {
       //   currentContext.setCurrentItem2((currentContext.currentItem3 += 1));
       // }
-    }, 2500);
+    }, 4000);
   }, [checked, setChecked]);
 
   const clickedItem = (item) => {
